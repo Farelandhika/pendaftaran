@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 2px;
+    padding: 1px;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f8f9fa;
+  }
+  
+  .hero {
+    background: url('https://source.unsplash.com/1600x900/?red-cross,volunteer') no-repeat center/cover;
+    height: 100vh;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 12px;
+    animation: fadeIn 1s ease-out;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  .btn {
+    padding: 0.8rem 1.5rem;
+    background: #e60000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  .btn:hover {
+    background: #c40000;
+  }
+  
+  section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+    margin: 50px;
+    margin-top: 10px;
+    padding: 25px;
+  }
+  .about p {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .activities .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 300px;
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .card img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .card h3 {
+    padding: 1rem 1rem 0 1rem;
+  }
+  .card p {
+    padding: 0 1rem 1rem 1rem;
+  }
+  
+  .form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: auto;
+  }
+  form input, form textarea {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  form button {
+    background: #e60000;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  form button:hover {
+    background: #c40000;
+  }
+  .hidden {
+    display: none;
+  }
+  #successMsg {
+    text-align: center;
+    margin-top: 1rem;
+    color: green;
+    font-weight: bold;
+  }
+  
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 2rem 5rem;
+    width: 250px 25%;
+    height: 5opx;
+    margin: 10px;
+  }
+  footer .sosmed a {
+    margin: 0 1rem;
+    color: #ddd;
+    text-decoration: none;
+  }
+  footer .sosmed a:hover {
+    color: #fff;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+    .activities .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
